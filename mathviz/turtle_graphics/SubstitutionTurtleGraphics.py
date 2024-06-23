@@ -1,7 +1,7 @@
 
 import re
 from typing import Dict
-from turtle_graphics.TurtleGraphics import TurtleGraphics
+from mathviz.turtle_graphics.TurtleGraphics import TurtleGraphics
 
 
 class SubstitutionTurtleGraphics:
@@ -50,7 +50,7 @@ def main():
     turtle = SubstitutionTurtleGraphics(nb_substitutions=5)
     xs, ys = turtle.run()
 
-    from turtle_graphics.visualize import visualize
+    from mathviz.turtle_graphics.visualize import visualize
     visualize(xs, ys)
 
 

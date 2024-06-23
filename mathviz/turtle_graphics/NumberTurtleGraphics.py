@@ -1,6 +1,6 @@
 
 import mpmath
-from turtle_graphics.TurtleGraphics import TurtleGraphics
+from mathviz.turtle_graphics.TurtleGraphics import TurtleGraphics
 from decimal import Decimal, getcontext
 
 
@@ -67,7 +67,7 @@ def main():
     turtle = NumberTurtleGraphics('pi', 4, 10000)
     xs, ys = turtle.run()
 
-    from turtle_graphics.visualize import visualize
+    from mathviz.turtle_graphics.visualize import visualize
     visualize(xs, ys)
 
 

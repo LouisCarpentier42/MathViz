@@ -53,7 +53,7 @@ def main():
     xs += [turtle.x]
     ys += [turtle.y]
 
-    from turtle_graphics.visualize import visualize
+    from mathviz.turtle_graphics.visualize import visualize
     visualize(xs, ys)
 
 

@@ -1,5 +1,5 @@
 
-from turtle_graphics.TurtleGraphics import TurtleGraphics
+from mathviz.turtle_graphics.TurtleGraphics import TurtleGraphics
 
 
 class IncreasingAngleTurtleGraphics:
@@ -30,7 +30,7 @@ def main():
     turtle = IncreasingAngleTurtleGraphics(1.002, 10000)
     xs, ys = turtle.run()
 
-    from turtle_graphics.visualize import visualize
+    from mathviz.turtle_graphics.visualize import visualize
     visualize(xs, ys)
 
 
