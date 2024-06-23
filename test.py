@@ -1,6 +1,0 @@
-
-
-import mathviz
-
-mathviz.run()
-
