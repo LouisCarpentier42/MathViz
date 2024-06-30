@@ -123,7 +123,7 @@ with c2:
     c21, c22 = st.columns(2)
     c21.number_input(
         label='Number of points',
-        min_value=3,
+        min_value=2,
         step=1,
         key='nb_points',
         on_change=randomly_initialize_points,
@@ -180,12 +180,6 @@ with c2:
 #########################################################################################
 # FIGURE
 #########################################################################################
-
-# [
-#             'Manually step around',
-#             'Immediately show the result',
-#             'Animate the results'
-#         ]
 
 if visualization_method != "Manually step around":
     initialize_random_moving_point()
