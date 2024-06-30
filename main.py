@@ -1,0 +1,2 @@
+import mathviz
+mathviz.run()

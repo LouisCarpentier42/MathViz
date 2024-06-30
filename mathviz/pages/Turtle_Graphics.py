@@ -5,7 +5,7 @@ import plotly.express as px
 import time
 import ast
 
-from mathviz import turtle_graphics
+from mathviz import turtle_graphics, readme
 
 ##########################################################################################
 # SETUP APPLICATION
@@ -15,6 +15,11 @@ st.set_page_config(
     page_icon=":turtle:",
     layout="wide"
 )
+
+if 'readme_info_turtle_graphics' not in st.session_state:
+    st.session_state.readme_info_turtle_graphics = readme('turtle_graphics')
+with st.expander('README', expanded=False):
+    st.markdown(st.session_state.readme_info_turtle_graphics)
 
 ##########################################################################################
 # SETUP PARAMETERS FOR FOLLOW NUMBER TURTLE

@@ -24,15 +24,3 @@ class IncreasingAngleTurtleGraphics:
                 current_angle -= 360.0
 
         return xs, ys
-
-
-def main():
-    turtle = IncreasingAngleTurtleGraphics(1.002, 10000)
-    xs, ys = turtle.run()
-
-    from mathviz.turtle_graphics.visualize import visualize
-    visualize(xs, ys)
-
-
-if __name__ == '__main__':
-    main()

@@ -62,14 +62,3 @@ class NumberTurtleGraphics:
 
         # Combine integer and fractional parts
         return int_digits + frac_digits
-
-def main():
-    turtle = NumberTurtleGraphics('pi', 4, 10000)
-    xs, ys = turtle.run()
-
-    from mathviz.turtle_graphics.visualize import visualize
-    visualize(xs, ys)
-
-
-if __name__ == '__main__':
-    main()

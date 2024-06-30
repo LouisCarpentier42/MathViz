@@ -44,15 +44,3 @@ class SubstitutionTurtleGraphics:
                 xs.append(self.turtle_graphics.x)
                 ys.append(self.turtle_graphics.y)
         return xs, ys
-
-
-def main():
-    turtle = SubstitutionTurtleGraphics(nb_substitutions=5)
-    xs, ys = turtle.run()
-
-    from mathviz.turtle_graphics.visualize import visualize
-    visualize(xs, ys)
-
-
-if __name__ == '__main__':
-    main()

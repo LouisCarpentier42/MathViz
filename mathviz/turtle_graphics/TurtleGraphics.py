@@ -23,39 +23,3 @@ class TurtleGraphics:
 
     def rotate(self, angle: float) -> None:
         self.angle += (angle*math.pi) / 180
-
-
-def main():
-    turtle = TurtleGraphics()
-
-    xs = [turtle.x]
-    ys = [turtle.y]
-
-    turtle.step(1.0)
-    xs += [turtle.x]
-    ys += [turtle.y]
-
-    turtle.rotate(90)
-    turtle.step(1.0)
-    xs += [turtle.x]
-    ys += [turtle.y]
-
-    turtle.rotate(120)
-    turtle.step(1.0)
-    xs += [turtle.x]
-    ys += [turtle.y]
-
-    turtle.reset(x=2, y=0)
-    xs += [turtle.x]
-    ys += [turtle.y]
-
-    turtle.step(1.0)
-    xs += [turtle.x]
-    ys += [turtle.y]
-
-    from mathviz.turtle_graphics.visualize import visualize
-    visualize(xs, ys)
-
-
-if __name__ == '__main__':
-    main()
