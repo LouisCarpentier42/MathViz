@@ -11,7 +11,7 @@ rules and see the patterns that come to live!
 The latest version of `MathViz` can be pip-installed using the url to 
 the GitHub repository:
 ```bash
-pip install https://github.com/LouisCarpentier42/MathViz
+pip install git+https://github.com/LouisCarpentier42/MathViz
 ```
 `MathViz` was developed using Python 3.11, but it should also work for 
 other Python versions, as long as the dependencies in [requirements.txt](requirements.txt)
